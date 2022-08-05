@@ -1,29 +1,43 @@
 # описание пациента
 # импорт класса из модуля
-from datetime import date
+from datetime import datetime
 # текущая дата
-today = date.today()
+today = datetime.today()
+print(type(today))
 print('Сегодня: ', today.strftime("%d.%m.%Y"))
+# дата рождения
+dateОfBirth = input("Введите дату рождения (dd.mm.yyyy):\n")
+birthdate = datetime.strptime(dateОfBirth,"%d.%m.%Y")
+age= int((today- birthdate).days / (365))
+print("Возраст пациента:", age, "год(а)")
 # фамилия, строкавая str
 surname = input('Введите фамилию: ')
 # имя, строкавая str
 name = input('Введите имя: ')
 # отчество, строкавая str
 patronymic = input('Введите отчество: ')
-# дата рождения
-dateОfBirth = input("Введите дату рождения (dd.mm.yyyy):\n")
-# возраст, надо  сделать расчет,  пока не понял как
-age = int(input('Введите возраст:'))
 # тип населенного пункта проживания,  лучше из списка или  словаря сделать
 locality = input('Введите тип населенного пункта: ')
 # улица
 Street = input('Введите улицу: ')
 # трудоустройство bool  - логический тип (Истина или ложь)
-employment = True
+employment = input("Пациент  трудоустроен(Да-нет): ")
+if employment == "Да":
+            print("Клиент трудоустроен, нуждается в оформлении ЛВН")
+else:
+      print("Так держать, не че горбатиться на дядю....")
 # пенсионер bool  - логический тип (Истина или ложь)
-retiree = True
+retiree = input("Пенсионер (Да-нет): ")
+if retiree == "Да":
+            print("Пенсионер, но если работает нужен ЛВН")
+else:
+      print("Много нас таких...")
 # обратился впервые bool  - логический тип (Истина или ложь)
-primary = True
+primary = input("Первичное обращение (Да-нет): ")
+if primary == "Да":
+            print("Все бывает впервые....")
+else:
+      print("Много нас таких...")
 #float - цисло с плавающей точкой
 temperature = 36.6
 print("today:", type(today), "surname:", type(surname), "name:", type(name), "patronymic:\n",
