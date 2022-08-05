@@ -1,14 +1,15 @@
 # описание пациента
 # импорт класса из модуля
 from datetime import datetime
+
 # текущая дата
 today = datetime.today()
 print(type(today))
 print('Сегодня: ', today.strftime("%d.%m.%Y"))
 # дата рождения
 dateОfBirth = input("Введите дату рождения (dd.mm.yyyy):\n")
-birthdate = datetime.strptime(dateОfBirth,"%d.%m.%Y")
-age= int((today- birthdate).days / (365))
+birthdate = datetime.strptime(dateОfBirth, "%d.%m.%Y")
+age = int((today - birthdate).days / (365))
 print("Возраст пациента:", age, "год(а)")
 # фамилия, строкавая str
 surname = input('Введите фамилию: ')
@@ -21,24 +22,33 @@ locality = input('Введите тип населенного пункта: ')
 # улица
 Street = input('Введите улицу: ')
 # трудоустройство bool  - логический тип (Истина или ложь)
+e  # трудоустройство bool  - логический тип (Истина или ложь)
+employment_stan = "Да"
 employment = input("Пациент  трудоустроен(Да-нет): ")
-if employment == "Да":
-            print("Клиент трудоустроен, нуждается в оформлении ЛВН")
+if employment == employment_stan:
+    print("Клиент трудоустроен, нуждается в оформлении ЛВН")
 else:
-      print("Так держать, не че горбатиться на дядю....")
+    print("Так держать, не че горбатиться на дядю....")
+print(employment == employment_stan)
 # пенсионер bool  - логический тип (Истина или ложь)
+retiree_stan = "Да"
 retiree = input("Пенсионер (Да-нет): ")
-if retiree == "Да":
-            print("Пенсионер, но если работает нужен ЛВН")
+if retiree == retiree_stan:
+    print("Пенсионер, но если работает нужен ЛВН")
 else:
-      print("Много нас таких...")
+    print("Много нас таких...")
+print(retiree == retiree_stan)
 # обратился впервые bool  - логический тип (Истина или ложь)
+primary_stan = "Да"
 primary = input("Первичное обращение (Да-нет): ")
-if primary == "Да":
-            print("Все бывает впервые....")
+if primary == primary_stan:
+    print("Все бывает впервые....")
 else:
-      print("Много нас таких...")
-#float - цисло с плавающей точкой
+    print("Много нас таких...")
+print(primary == primary_stan)
+# float - цисло с плавающей точкой
+temperature = 36.6
+# float - цисло с плавающей точкой
 temperature = 36.6
 print("today:", type(today), "surname:", type(surname), "name:", type(name), "patronymic:\n",
       type(patronymic), "dateОfBirth:", type(dateОfBirth), "age:", type(age), "locality\n:", type(locality),
