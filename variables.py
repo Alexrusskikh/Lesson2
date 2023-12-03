@@ -6,8 +6,8 @@ today = datetime.today()
 print(type(today))
 print('Сегодня: ', today.strftime("%d.%m.%Y"))
 # дата рождения
-dateОfBirth = input("Введите дату рождения (dd.mm.yyyy):\n")
-birthdate = datetime.strptime(dateОfBirth,"%d.%m.%Y")
+dateBirth = input("Введите дату рождения (dd.mm.yyyy):\n")
+birthdate = datetime.strptime(dateBirth,"%d.%m.%Y")
 age= int((today- birthdate).days / (365))
 print("Возраст пациента:", age, "год(а)")
 # фамилия, строкавая str
@@ -47,7 +47,7 @@ print(retiree == retiree_stan)
 #float - цисло с плавающей точкой
 temperature = 36.6
 print("today:", type(today), "surname:", type(surname), "name:", type(name), "patronymic:\n",
-      type(patronymic), "dateОfBirth:", type(dateОfBirth), "age:", type(age), "locality\n:", type(locality),
+      type(patronymic), "dateОfBirth:", type(dateBirth), "age:", type(age), "locality\n:", type(locality),
       "Street :", type(street), "employment", type(employment), "retiree:", type(retiree), "primary:\n", type(primary),
       "temperature :", type(temperature))
 print("End")
