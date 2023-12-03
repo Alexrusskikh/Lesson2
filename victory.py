@@ -13,7 +13,7 @@ while NewRound == "Да" or NewRound == "да":
     # Вопрос1
     test = input("Укажите год рождения И.А.Крылова '1769': ")
     while not test.isdigit():
-        test = input("Ведите цисло, плиз: ")
+        test = input("Ведите число, плиз: ")
     test = int(test)
     if test == 1769:
         print("Верно!!!!")
@@ -24,7 +24,7 @@ while NewRound == "Да" or NewRound == "да":
     # Вопрос2
     test = input("Укажите год рождения П.И.Чайковского '1840': ")
     while not test.isdigit():
-        test = input("Ведите цисло, плиз: ")
+        test = input("Ведите число, плиз: ")
     test = int(test)
     if test == 1840:
         print("Верно!!!!")
@@ -35,7 +35,7 @@ while NewRound == "Да" or NewRound == "да":
     # Вопрос3
     test = input("Укажите год рождения Г.К.Жукова '1896': ")
     while not test.isdigit():
-        test = input("Ведите цисло, плиз: ")
+        test = input("Ведите число, плиз: ")
     test = int(test)
     if test == 1896:
         print("Верно!!!!")
@@ -46,7 +46,7 @@ while NewRound == "Да" or NewRound == "да":
     # Вопрос4
     test = input("Укажите год рождения Ю.А.Гагарина '1934': ")
     while not test.isdigit():
-        test = input("Ведите цисло, плиз: ")
+        test = input("Ведите число, плиз: ")
     test = int(test)
     if test == 1934:
         print("Верно!!!!")
@@ -57,7 +57,7 @@ while NewRound == "Да" or NewRound == "да":
     # Вопрос5
     test = input("Укажите год рождения В.И.Ленина '1870': ")
     while not test.isdigit():
-        test = input("Ведите цисло, плиз: ")
+        test = input("Ведите число, плиз: ")
     test = int(test)
     if test == 1870:
         print("Верно!!!!")
