@@ -1,6 +1,7 @@
 # описание пациента
 # импорт класса из модуля
 from datetime import datetime
+
 # текущая дата
 today = datetime.today()
 print(type(today))
@@ -21,40 +22,36 @@ locality = input('Введите тип населенного пункта: ')
 # улица
 Street = input('Введите улицу: ')
 # трудоустройство bool  - логический тип (Истина или ложь)
+e  # трудоустройство bool  - логический тип (Истина или ложь)
 employment_stan = "Да"
 employment = input("Пациент  трудоустроен(Да-нет): ")
-comparison_emp = employment == employment_stan
-if comparison_emp == True:
+if employment == employment_stan:
     print("Клиент трудоустроен, нуждается в оформлении ЛВН")
 else:
     print("Так держать, не че горбатиться на дядю....")
-print("Трудоустройство: ", comparison_emp)
-
+print(employment == employment_stan)
 # пенсионер bool  - логический тип (Истина или ложь)
 retiree_stan = "Да"
 retiree = input("Пенсионер (Да-нет): ")
-comparison_ret = retiree == retiree_stan
-if comparison_ret == True:
+if retiree == retiree_stan:
     print("Пенсионер, но если работает нужен ЛВН")
 else:
     print("Много нас таких...")
-print("Пенсионер: ", comparison_ret)
-
+print(retiree == retiree_stan)
 # обратился впервые bool  - логический тип (Истина или ложь)
 primary_stan = "Да"
 primary = input("Первичное обращение (Да-нет): ")
-comparison_prim = primary == primary_stan
-if comparison_prim == True:
+if primary == primary_stan:
     print("Все бывает впервые....")
 else:
     print("Много нас таких...")
-print("Первичное обращение: ", comparison_prim)
+print(primary == primary_stan)
 # float - цисло с плавающей точкой
-temperature = float(input('Температура тела (36.6): '))
-print("Температура тела: ", type(temperature), temperature)
+temperature = 36.6
+# float - цисло с плавающей точкой
+temperature = 36.6
 print("today:", type(today), "surname:", type(surname), "name:", type(name), "patronymic:\n",
       type(patronymic), "dateОfBirth:", type(dateОfBirth), "age:", type(age), "locality\n:", type(locality),
-      "Street :", type(Street), "employment", type(comparison_emp), "retiree:", type(comparison_ret), "primary:\n",
-      type(comparison_prim),
+      "Street :", type(Street), "employment", type(employment), "retiree:", type(retiree), "primary:\n", type(primary),
       "temperature :", type(temperature))
 print("End")
