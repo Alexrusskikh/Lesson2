@@ -65,8 +65,9 @@ while NewRound == "Да" or NewRound == "да":
     else:
         print("Не верно!!!!")
         wrongSumBall = wrongSumBall + 1
-    percentRight = (rightSumBall * 100) / 5
-    percentWrong = (wrongSumBall * 100) / 5
+    question_count = 5
+    percentRight = (rightSumBall * 100) / question_count
+    percentWrong = (wrongSumBall * 100) / question_count
     print(f'Правильных ответов -  {rightSumBall},  это {percentRight} %')
     print(f'Неверных ответов -  {wrongSumBall}, это {percentWrong} %')
     NewRound = input("Хотите начать сначала? (Да-Нет): ")
